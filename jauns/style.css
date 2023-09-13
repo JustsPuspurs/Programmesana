@@ -1,0 +1,19 @@
+
+body{
+    background-color: aliceblue;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.square {
+  height:500px;
+  width: 500px;
+  background-color: rgb(115, 255, 225);
+  border: dashed rgb(68, 156, 144);
+  margin:5px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
