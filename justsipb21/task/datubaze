@@ -1,0 +1,49 @@
+{{{{{{Darbs Datu bāzu programesana!!!!!!!!!!!!!!!}}}}}}
+
+Uzdevuma apraksts: Izveidot uzdevumu pārvaldības sistēmu
+
+Prasības:
+
+Datu bāzes iestatīšana:
+
+Izveidojiet MySQL datu bāzi ar nosaukumu task_management.
+Izveidojiet tabulu ar nosaukumu tasks ar šādām kolonnām:
+id 
+title 
+description
+due_date
+status
+created_at 
+
+Aizmugurējās puses izstrāde:
+
+Izveidojiet PHP OOP skriptu, lai izveidotu savienojumu ar MySQL datu bāzi.
+Īstenojiet šādus API punktus uzdevumiem:
+GET /tasks: Izgūstiet visu uzdevumu sarakstu.
+GET /tasks/{id}: Izgūstiet konkrētu uzdevumu pēc ID.
+POST /tasks: Izveidojiet jaunu uzdevumu.
+PUT /tasks/{id}: Atjauniniet esošu uzdevumu pēc ID.
+DELETE /tasks/{id}: Dzēsiet uzdevumu pēc ID.
+
+Funkcionalitāte:
+
+Veicot uzdevumu
+Validējiet ievades datus (piemēram, nosaukums ir obligāts, termiņš ir derīgs datums,utt).
+Ievietojiet kļūdu apstrādi un atgrieziet atbilstošus kļūdu ziņojumus JSON formātā API punktos.
+Izveidojiet irobežotu skaitu vienā lapā uzdevumu sarakstam, lietotājam jābūt iespējai norādīt lapas numuru un uzdevumu skaitu.
+
+Pārbaude:
+
+Izveidojiet vienkāršu HTML/JavaScript lietotnes saskarni. Pārbaudiet visas darbību (izveidot, lasīt, atjaunot, dzēst) izmantojot priekšējās puses saskarni.
+Manuāli pārbaudiet malu gadījumus un kļūdu apstrādes scenārijus (piemēram, mēģinot atjaunināt/dzēst neesošu uzdevumu, piedāvājot nederīgus datus).
+Dokumentējiet savus API punktus un uzrakstit piemērus vaicājumu un atbilžu pieprasījumiem.
+
+Drošība:
+
+Īstenojiet pamata autentifikāciju (piemēram, lietotājvārds/parole), lai aizsargātu API punktus. Šim nolūkam varat izmantot PHP sesijas.
+
+Bonuss:
+
+Īstenojiet uzdevumu saraksta kārtošanas un filtrēšanas iespējas (piemēram, kārtošana pēc termiņa, filtrēšana pēc statusa).
+Pievienojiet lietotāju autentifikāciju un autorizāciju, lai ierobežotu piekļuvi konkrētiem uzdevumiem, pamatojoties uz lietotāju lomām.
+
