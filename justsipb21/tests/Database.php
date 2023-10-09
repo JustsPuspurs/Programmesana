@@ -4,7 +4,6 @@ class Database {
     private $username = "root";
     private $password = "";
     private $dbname = "task_management";
-
     protected $connection;
 
     public function __construct() {
@@ -17,6 +16,10 @@ class Database {
 
     public function getConnection() {
         return $this->connection;
+    }
+
+    public function query($sql) {
+        return $this->connection->query($sql);
     }
 
     public function closeConnection() {

@@ -15,6 +15,7 @@ if (isset($_GET['id'])) {
         echo '<p><strong>Due Date:</strong> ' . $task['due_date'] . '</p>';
         echo '<p><strong>Status:</strong> ' . $task['status'] . '</p>';
         echo '<p><strong>Created At:</strong> ' . $task['created_at'] . '</p>';
+        echo '<a href="index.php">Back to Task List</a>';
     } else {
         echo 'Task not found.';
     }
